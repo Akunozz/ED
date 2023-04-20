@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/breno/OneDrive/Documentos/GitHub/ED",
-      "program": "c:/Users/breno/OneDrive/Documentos/GitHub/ED/build/Debug/outDebug",
+      "cwd": "c:/Users/breno/OneDrive/Documentos/GitHub/ED/Projeto Trab1 ex03",
+      "program": "c:/Users/breno/OneDrive/Documentos/GitHub/ED/Projeto Trab1 ex03/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
