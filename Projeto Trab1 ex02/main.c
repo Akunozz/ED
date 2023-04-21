@@ -11,5 +11,4 @@ do{
 matriz->prim=AlocacaoDaMatriz(matriz, &continuarLinha, &continuarColuna);
 }while((continuarLinha!=matriz->linhas)&&(continuarColuna!=matriz->colunas));
 menu(matriz);
-
 }

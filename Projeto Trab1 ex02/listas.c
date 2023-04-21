@@ -13,7 +13,6 @@ int linhas,colunas;
         scanf("%d", &colunas);
         novo->colunas=colunas;
         novo->prim=NULL;
-
     return novo;
 }
 
@@ -105,10 +104,10 @@ Lista* temp;
 int i, j, linha, coluna;
 printf("\nQual a Linha que o elemento se encontra? (de 1 ateh %d)\n",matriz->linhas);
 scanf("%d",&linha);
-linha=linha-1; // coloquei um "-1" para reconhecer quando o usuario digita o formato usual (linha 1 até o tam max).
+linha=linha-1; // coloquei um "-1" para reconhecer quando o usuario digita o formato usual (linha 1 atï¿½ o tam max).
 printf("\nQual a coluna que o elemento se encontra? (de 1 ateh %d)\n",matriz->colunas);
 scanf("%d",&coluna);
-coluna=coluna-1;// coloquei um "-1" para reconhecer quando o usuario digita o formato usual (coluna 1 até o tam max).
+coluna=coluna-1;// coloquei um "-1" para reconhecer quando o usuario digita o formato usual (coluna 1 atï¿½ o tam max).
 for(i=0;i<matriz->linhas;i++)
 {
     for(j=0;j<matriz->colunas;j++)
@@ -132,7 +131,7 @@ Lista* temp;
 int i, linha, soma=0;
 printf("\nQual a Linha que gostaria de somar os elementos? (de 1 ateh %d)\n",matriz->linhas);
 scanf("%d",&linha);
-linha=linha-1; // coloquei um "-1" para reconhecer quando o usuario digita o formato usual (linha 1 até o tam max).
+linha=linha-1; // coloquei um "-1" para reconhecer quando o usuario digita o formato usual (linha 1 atï¿½ o tam max).
 for(i=0;i<matriz->linhas;i++)
 {
     if(i==linha)
