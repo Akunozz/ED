@@ -3,19 +3,19 @@
 #include "matriz.h"
 
 int main() {
-    int m, n, z;
+    int x, y, z;
     int ***mat;
 
-    printf("Digite o número de linhas: ");
-    scanf("%d", &m);
-    printf("Digite o número de colunas: ");
-    scanf("%d", &n);
-    printf("Digite o número de profundidade: ");
+    printf("Digite o numero de linhas(i): ");
+    scanf("%d", &x);
+    printf("Digite o numero de colunas(j): ");
+    scanf("%d", &y);
+    printf("Digite o numero de profundidade(k): ");
     scanf("%d", &z);
 
-    mat = aloca_matriz(m, n, z);
-    preenche_matriz(m, n, z, mat);
-    imprime_matriz(m, n, z, mat);
+    mat = aloca_matriz(x, y, z);
+    preenche_matriz(x, y, z, mat);
+    imprime_matriz(x, y, z, mat);
 
     return 0;
 }

@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include "matriz.h"
 
-int*** aloca_matriz(int m, int n, int z) {
+int*** aloca_matriz(int x, int y, int z) {
     int i, j;
-    int ***mat = (int***) malloc(m * sizeof(int**));
+    int ***mat = (int***) malloc(x * sizeof(int**));
 
-    for (i = 0; i < m; i++) {
-        mat[i] = (int**) malloc(n * sizeof(int*));
+    for (i = 0; i < x; i++) {
+        mat[i] = (int**) malloc(y * sizeof(int*));
 
-        for (j = 0; j < n; j++) {
+        for (j = 0; j < y; j++) {
             mat[i][j] = (int*) malloc(z * sizeof(int));
         }
     }
@@ -17,11 +17,11 @@ int*** aloca_matriz(int m, int n, int z) {
     return mat;
 }
 
-void preenche_matriz(int m, int n, int z, int ***mat) {
+void preenche_matriz(int x, int y, int z, int ***mat) {
     int i, j, k;
 
-    for (i = 0; i < m; i++) {
-        for (j = 0; j < n; j++) {
+    for (i = 0; i < x; i++) {
+        for (j = 0; j < y; j++) {
             for (k = 0; k < z; k++) {
                 printf("Digite o elemento [%d][%d][%d]: ", i, j, k);
                 scanf("%d", &mat[i][j][k]);
@@ -30,11 +30,11 @@ void preenche_matriz(int m, int n, int z, int ***mat) {
     }
 }
 
-void imprime_matriz(int m, int n, int z, int ***mat) {
+void imprime_matriz(int x, int y, int z, int ***mat) {
     int i, j, k;
 
-    for (i = 0; i < m; i++) {
-        for (j = 0; j < n; j++) {
+    for (i = 0; i < x; i++) {
+        for (j = 0; j < y; j++) {
             for (k = 0; k < z; k++) {
                 printf("%d ", mat[i][j][k]);
             }

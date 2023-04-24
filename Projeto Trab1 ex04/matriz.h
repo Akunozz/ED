@@ -1,3 +1,3 @@
-int*** aloca_matriz(int m, int n, int z);
-void preenche_matriz(int m, int n, int z, int ***mat);
-void imprime_matriz(int m, int n, int z, int ***mat);
+int*** aloca_matriz(int x, int y, int z);
+void preenche_matriz(int x, int y, int z, int ***mat);
+void imprime_matriz(int x, int y, int z, int ***mat);
