@@ -6,16 +6,16 @@ int main() {
     int **matriz;
 
     // Leitura do número de linhas e colunas
-    printf("Digite o número de linhas: ");
+    printf("Digite o numero de linhas: ");
     scanf("%d", &linhas);
 
-    printf("Digite o número de colunas: ");
+    printf("Digite o numero de colunas: ");
     scanf("%d", &colunas);
 
     // Alocação dinâmica da matriz
     matriz = (int **)malloc(linhas * sizeof(int *));
     if (matriz == NULL) {
-        printf("Falha na alocação de memória.\n");
+        printf("Falha na alocação de memoria.\n");
         return 1; // Encerra o programa com status de erro
     }
 
@@ -23,7 +23,7 @@ int main() {
     for (int i = 0; i < linhas; i++) {
         matriz[i] = (int *)malloc(colunas * sizeof(int));
         if (matriz[i] == NULL) {
-            printf("Falha na alocação de memória.\n");
+            printf("Falha na alocação de memoria.\n");
             return 1; // Encerra o programa com status de erro
         }
     }
